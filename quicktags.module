@@ -1,0 +1,8 @@
+<?
+function quicktags_form_alter(&$form, $form_state, $form_id){	
+	if (strpos($form_id, '_node_form')) {		
+		drupal_add_js(drupal_get_path('module', 'quicktags')."/quicktags.js");
+		$form["body_field"]["#prefix"] .= "<script type=\"text/javascript\">edToolbar('edit-body');</script>";			
+	}
+	return $form;
+}

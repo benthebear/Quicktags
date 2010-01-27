@@ -1,0 +1,6 @@
+; $Id:  $
+name = Quicktags
+description = Adds Alex Kings famous Quicktags-Editor to Node Creation Forms
+package = Editor
+version = VERSION
+core = 6.x
